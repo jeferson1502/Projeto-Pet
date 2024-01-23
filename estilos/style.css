@@ -1,1 +1,116 @@
 @charset "UTF-8";
+
+/* cores
+   azul: #2D63C5
+   azul escuro: #2F348B
+   azul claro: #68C8D7
+   verde: #96C42D
+
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header{
+    background-color: #2F348B;
+}
+
+header > div{
+    display: flex;
+}
+
+header h1{
+    margin: 30px 5px 30px 20px;
+    align-self: center;
+    font-size: 3em;
+    color: white;
+}
+
+header form{
+    margin-left: 45px;
+    align-self: center;
+    /*  margin: auto;*/
+}
+
+header form > input{
+    width: 800px;
+    font-size: 1.4em;
+    border-radius: 25px;
+    padding: 8px 15px;
+    border: .5px solid rgba(0, 0, 0, .2);
+}
+
+header form > input:hover{
+    background-color: rgba(255, 255, 255, .7);
+    cursor: pointer;
+    color: white;
+    
+    transition: .3s ease;
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+
+nav li{
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+header a:hover{
+    background-color: #00000036;
+    transition: .25s;
+}
+
+header a:active{
+    background-color: #1e4792;
+    /*color: rgb(189, 183, 183);*/
+    transition: 0s;
+}
+
+h1{
+    margin: 20px;
+}
+
+.principais{
+    display: flex;
+    justify-content: space-around;
+}
+
+.pets{
+    display: flex;
+}
+
+.fpet{
+    margin: 0 auto;
+    transition: .25s ease-in-out;
+}
+
+.fpet > p{
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.fpet > img{
+    width: 200px;;
+}
+
+.fpet:hover{
+    transform: scale(1.2);
+    box-shadow: 1px 1px 8px 0px rgba(44, 44, 44, .5);
+    cursor: pointer;
+}
