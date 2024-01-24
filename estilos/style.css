@@ -8,10 +8,16 @@
 
 */
 
+@font-face {
+    font-family: 'ubuntu';
+    src: url(../fonts/Ubuntu-Regular.ttf) format(truetype);
+}
+
 *{
     margin: 0;
     padding: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'ubuntu', Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
 }
 
 header{
@@ -39,13 +45,13 @@ header form > input{
     width: 800px;
     font-size: 1.4em;
     border-radius: 25px;
-    padding: 8px 50px;
+    padding: 8px 45px;
     border: .5px solid rgba(0, 0, 0, .2);
 }
 
 header form > input:hover{
     background-color: rgba(255, 255, 255, .7);
-    cursor: pointer;
+    /*cursor: pointer;*/
     color: black;
     
     transition: .3s ease;
@@ -91,7 +97,7 @@ h1{
 
 span{
     position: relative;
-    transform: translate(50px, 3px);
+    transform: translate(46px, 4px);
     background-color: #96C42D;
     color: white;
     padding: 7px;
@@ -105,6 +111,7 @@ span{
 
 .pets{
     display: flex;
+    margin-bottom: 60px;
 }
 
 .fpet{
@@ -115,7 +122,8 @@ span{
 .fpet > p{
     text-align: center;
     justify-content: center;
-    font-weight: bold;
+    align-self: baseline;
+   /*font-weight: bold;*/
 }
 
 .fpet > img{
@@ -123,7 +131,68 @@ span{
 }
 
 .fpet:hover{
-    transform: scale(1.2);
+    transform: scale(1.05);
     box-shadow: 1px 1px 8px 0px rgba(44, 44, 44, .5);
     cursor: pointer;
+}
+
+.fav{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 400px;
+    margin: 40px 0px 100px 0px;
+}
+
+.fav p{
+    grid-row: 2;
+    align-self: center;
+    font-weight: bold;
+}
+
+.fav strong{
+    font-size: 1.5em;
+    align-self: flex-end;
+    /*text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.418);*/
+    color: #96C42D;
+}
+
+.fav a{
+    grid-row: 3;
+    align-self: flex-end;
+    text-align: center;
+    margin: 0 auto;
+    text-decoration: none;
+    background-color: #96C42D;
+    color: white;
+    padding: 10px;
+    font-size: 1.3em;
+    width: calc(80vw/5);
+    border-radius: 18px;
+}
+
+.fav a:hover{
+    background-color: #58721b;
+    transform: scale(1.02);
+
+    transition: .25s ease;
+}
+
+.fav img{
+    width: 200px;
+    height: 200px;
+    justify-self: center;
+}
+
+div.fav{
+   /*border: 1px solid blue;*/
+    padding: 5px;
+}
+
+div.fav{
+    grid-template-columns: 1fr;
+    /*border: 2px solid #2F348B;*/
+    box-shadow: 0px 0px 8px rgba(44, 44, 44, .3);
+    border-radius: 5px;
+    margin: 8px;
 }
