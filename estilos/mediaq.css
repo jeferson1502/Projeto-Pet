@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+/* Header */
+
+@media (max-width: 860px){
+    header > div{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 80px 60px 30px;
+    }
+
+    header h1, form, nav{
+        justify-self: center;
+    }
+
+    header form{
+        margin: 0;
+    }
+
+}
+
+@media (max-width: 465px){
+    header form{
+        justify-self: start;
+    }
+}
+
+
+@media (max-width: 475px){
+    ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Conteúdos */
+
+@media (max-width: 880px){
+    .fpet img{
+        width: 140px;
+    }   
+    
+    .pets{
+        overflow-x: scroll;
+    }
+}
+
+
+/* Vendas */
+
+@media (max-width: 1127px) {
+    section.fav{
+        overflow-x: scroll;
+    }
+
+    div.fav{
+        height: 377px;
+    }
+
+    div.fav > a{
+        width: 200px;
+    }
+
+}
+
+
+/* footer */
+
+@media (max-width: 893px){
+    .footer{
+        grid-template-columns: 500px;
+        justify-content: center;
+        text-align: left;
+    }
+
+    .footer > div{
+        justify-self: start;
+    }
+
+    .footer div + div{
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 600px){
+    .footer{
+        grid-template-columns: 200px;
+        justify-content: center;
+        text-align: left;
+    }
+
+}
+

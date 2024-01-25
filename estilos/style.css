@@ -20,6 +20,8 @@
     font-weight: bold;
 }
 
+/* Header */
+
 header{
     background-color: #2F348B;
 }
@@ -42,7 +44,7 @@ header form{
 }
 
 header form > input{
-    width: 800px;
+    width: 55vw;
     font-size: 1.4em;
     border-radius: 25px;
     padding: 8px 45px;
@@ -72,20 +74,21 @@ nav li{
     margin-bottom: 15px;
 }
 
-header a{
+header nav a{
     color: white;
     text-decoration: none;
     padding: 15px;
     border-radius: 5px;
     font-weight: bold;
+    text-shadow: 1px 1px 3px black;
 }
 
-header a:hover{
+header nav a:hover{
     background-color: #00000036;
     transition: .25s;
 }
 
-header a:active{
+header nav a:active{
     background-color: #1e4792;
     /*color: rgb(189, 183, 183);*/
     transition: 0s;
@@ -95,7 +98,7 @@ h1{
     margin: 20px;
 }
 
-span{
+.luneta{
     position: relative;
     transform: translate(46px, 4px);
     background-color: #96C42D;
@@ -104,13 +107,39 @@ span{
     border-radius: 50%;
 }
 
+.loginn{
+    align-self: center;
+    color: #96C42D;
+    margin: 15px;
+}
+
+.login{
+    color: #96C42D;
+    margin-left: 20px;
+    transform: scale(2);
+}
+
+.login > p{
+    font-family: 'ubuntu';
+    font-size: 10px;
+    color: white;
+}
+
+.login:hover{
+    color: white;
+    transition: .2s ease-out;
+}
+
+/* Conteúdos */
+
 .principais{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .pets{
     display: flex;
+   /* flex-wrap: wrap;*/
     margin-bottom: 60px;
 }
 
@@ -118,6 +147,7 @@ span{
     margin: 0 auto;
     transition: .22s ease-in-out;
 }
+
 
 .fpet > p{
     text-align: center;
@@ -127,7 +157,7 @@ span{
 }
 
 .fpet > img{
-    width: 200px;;
+    width: 15vw;;
 }
 
 .fpet:hover{
@@ -135,6 +165,10 @@ span{
     box-shadow: 1px 1px 8px 0px rgba(44, 44, 44, .5);
     cursor: pointer;
 }
+
+
+
+/* Vendas */
 
 .fav{
     display: grid;
@@ -196,3 +230,28 @@ div.fav{
     border-radius: 5px;
     margin: 8px;
 }
+
+/* footer */
+
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: left;
+    padding: 35px;
+    background-color: #2F348B;
+    color: white;
+}
+
+.footer > div{
+    justify-self: center;
+}
+
+.footer h1{
+    margin: 0px;
+    font-weight: normal;
+}
+
+.footer p{
+    font-weight: normal;
+}
+
